@@ -1,0 +1,21 @@
+ion-toolbar {
+    background-color: var(--ion-color-mycolor);
+  }
+
+  ion-title {
+    font-size: 80px;
+    font-family: 'Great vibes', cursive; /* Aplica la fuente 'Pacifico' */
+    color: #87f6ba;
+    padding-top: 30px; /* Ajusta el padding superior */
+    margin-top: 50px; /* Ajusta este valor según necesites */
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-family: 'Roboto Condensed', cursive; /* Aplica la fuente 'Pacifico' */
+    color: black;
+    padding-top: 0px; /* Ajusta el padding superior */
+    margin-top: 0px; /* Ajusta este valor según necesites */
+    text-align: center;
+  }

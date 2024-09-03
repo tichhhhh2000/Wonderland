@@ -1,0 +1,25 @@
+ion-toolbar {
+    background-color: var(--ion-color-mycolor);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+  
+  h1 {
+    font-size: 90px;
+    font-family: 'Great vibes', cursive; 
+    color: white;
+    padding-top: 30px; /* Ajusta el padding superior */
+    margin-top: 30px; /* Ajusta este valor según necesites */
+    text-align: center;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Playwrite+HR:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+  
+  h2 {
+    font-size: 40px;
+    font-family: 'Roboto Condensed', cursive; /* Aplica la fuente 'Pacifico' */
+    color: black;
+    padding-top: 0px; /* Ajusta el padding superior */
+    margin-top: 0px; /* Ajusta este valor según necesites */
+    text-align: center;
+  }

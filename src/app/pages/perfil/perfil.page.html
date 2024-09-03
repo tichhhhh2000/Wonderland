@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-back-button  
+        icon="arrow-back-outline" 
+        text="" 
+        color="black"
+        defaultHref="/home">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      Mi cuenta
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-grid>
+    <ion-row id="row-cards1" >
+      <ion-col size="6">
+        <ion-card button [routerLink]="['/generos']">
+          <img src="assets/icon/wings.jpg" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-title id="titulo1"> nombre de la cuenta </ion-title>
+
+  <ion-title id="titulo2"> Correo de la cuenta </ion-title>
+
+
+  <ion-button shape="round" id="boton1">Cambiar de cuenta </ion-button>
+  <ion-button shape="round" id="boton2">Cambiar contraseña</ion-button>
+
+
+
+
+</ion-content>

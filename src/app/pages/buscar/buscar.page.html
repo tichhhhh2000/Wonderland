@@ -1,0 +1,104 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+      </ion-menu-button>
+
+      <ion-title>
+        Buscar
+      </ion-title>
+    
+    </ion-buttons >
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-searchbar placeholder="Buscar Álbum"></ion-searchbar>
+  </div>
+
+  <ion-title id="title">
+    Explorar albums
+  </ion-title>
+
+  <ion-grid>
+    <ion-row id="row-cards1" >
+      <ion-col size="6">
+        <ion-card button [routerLink]="['/generos']">
+          <img src="assets/icon/wings.jpg" />
+          <ion-card-header>
+            <ion-card-title>Generos</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card button [routerLink]="['/artistas']">
+          <img src="assets/icon/wings.jpg" />
+          <ion-card-header>
+            <ion-card-title>Artistas</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row id="row-cards2">
+      <ion-col size="6">
+        <ion-card button [routerLink]="['/nombres']">
+          <img src="assets/icon/wings.jpg" />
+          <ion-card-header>
+            <ion-card-title>Nombres</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card button [routerLink]="['/precio']">
+          <img src="assets/icon/wings.jpg" />
+          <ion-card-header>
+            <ion-card-title>Precio</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+ 
+  </ion-grid>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/home']" class="footer-button">
+            <ion-icon name="home" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/buscar']" class="footer-button">
+            <ion-icon name="search" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/libreria']" class="footer-button">
+            <ion-icon name="library" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/carrito']" class="footer-button">
+            <ion-icon name="cart" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

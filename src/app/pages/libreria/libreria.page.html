@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+      </ion-menu-button>
+
+      <ion-title>Guardados</ion-title>
+      
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngFor="let album of albums">
+        
+        <ion-item-sliding>
+          
+          <!-- Contenido de la tarjeta del álbum -->
+          <ion-item [routerLink]="['/detalle-libreria']">
+            <ion-thumbnail slot="start">
+              <img [src]="album.portada" alt="{{ album.nombre }} - Portada del Álbum">
+            </ion-thumbnail>
+            <ion-label>
+              <h2>{{ album.nombre }}</h2>
+              <p>{{ album.artista }}</p>
+              <p style="font-weight: bold;">{{ album.precio }}</p>
+            </ion-label>
+          </ion-item>
+  
+          <!-- Opciones de deslizamiento -->
+          <ion-item-options side="end">
+            <ion-item-option (click)="agregarAlbum()">Agregar al carrito</ion-item-option>
+            <ion-item-option color="danger" (click)="eliminarAlbum()" >Eliminar</ion-item-option>
+          </ion-item-options>
+          
+        </ion-item-sliding>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/home']" class="footer-button">
+            <ion-icon name="home" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/buscar']" class="footer-button">
+            <ion-icon name="search" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/libreria']" class="footer-button">
+            <ion-icon name="library" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="3" class="ion-text-center">
+          <ion-button fill="clear" [routerLink]="['/carrito']" class="footer-button">
+            <ion-icon name="cart" style="font-size: 24px;"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
